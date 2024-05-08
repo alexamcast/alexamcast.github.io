@@ -1,0 +1,359 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexandra Castelazo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#home" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#about" class="icon solid fa-heart"><span>About Me</span></a>
+						<!-- <a href="#work" class="icon solid fa-folder"><span>Projects</span></a> -->
+						<a href="#work" class="icon solid fa-laptop"><span>Projects</span></a>
+						<a href="#research" class="icon solid fa-book"><span>Research</span></a>
+						<a href="#talks" class="icon solid fa-chalkboard-teacher"><span>Talks</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Alexandra Castelazo</h1>
+									<p>Mathematician and Statistician</p>
+								</header>
+								<a href="#about" class="jumplink pic">
+									<!--<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>-->
+									<img src="images/sequoia.jpg" alt="" />
+								</a>
+							</article>
+						<!-- About -->
+						<article id="about" class="panel">
+							<header>
+								<h1>ABOUT ME</h1>
+							</header>
+								<p>My name is Alexandra Castelazo (Alexa for short) and I'm a Statistics Master's student in the 
+								Department of Mathematics & Statistics at California Polytechnic University, Pomona (where 
+								I also previously completed my Bachelor's of Science in Applied Mathematics).
+								</p>
+								
+								<p>I enjoy making/listening to music, learning new coding languages, and learning foreign languages.</p>						
+						</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h1>PROJECTS</h1>
+									<p>
+										Below are some of the projects I worked on for various classes throughout my undergraduate and graduate career.
+									</p>
+								</header><br>
+								<div class="button-container">
+									<u><h2>GRADUATE</h2></u><br>
+																			
+									<div>
+										<button id="toggleButton1" onclick="myFunction('myDIV1')">Forecasting Police Shootings in America</button>
+											<div id="myDIV1" style="display: none;">
+												<p>
+													Analysis on trends, seasonality, and forecasting of police shootings with a dataset with information on daily shootings,
+													as well as the ethnicity of the people that had been shot from 2015-2020. The data included six ethnical categories: White, Black, Hispanic,
+													Asian, Native, and Other. 
+												</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton2" onclick="myFunction('myDIV2')">Predicting Credit Card Fraud</button>
+											<div id="myDIV2" style="display: none;">
+												<p>
+													Prediction and detection of credit card fraud from a dataset
+													of 1000 observations of accounts that have at least one recently 
+													declined charge and other demographic and account information. Methods
+													for model selection are Logistic regression, Linear Discriminant Analysis,
+													GAM's, Decisions Trees, and Random Forests and an implementation of a
+													probability threshold of 0.25 to help with selecting the model that 
+													overestimates the number of compromised credit cards to help minimize overall
+													costs.
+												</p>
+												<a href="#" class="image fit"><img src="images/cardfraud.jpg" alt=""></a>
+												<p>	The final chosen predictive model, out of a total of 15 models, was a Random Forest for the following model:
+													fraud ∼ number of declines + age + amount. This model had an AUC (for both training and test sets) of 0.8919.</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton3" onclick="myFunction('myDIV3')">Forecasting Taipei Housing Market Prices for January 2020</button>
+											<div id="myDIV3" style="display: none;">
+												<p>
+													Prediction of housing price estimates for a collection of ten residential buildings to be sold in January 2020,
+													where the predictions are not to be higher than 10% of the true market prices so the houses sell.
+													The data has 1587 known property transactions that took place in Taipei City and contains information about 
+													each property including the transaction price, the district in which the building is located, the land and 
+													building areas, the main building material, the numbers of rooms, hallways, and bathrooms, the year and month 
+													of the transaction, and the year the building was made.
+												</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton4" onclick="myFunction('myDIV4')">Titanic Mortality Predictions</button>
+											<div id="myDIV4" style="display: none;">
+												<p>
+													Prediction of the mortality rates of 418 passengers who were aboard the Titanic
+													with the use of machine learning. The data used included information on 891 passengers of the
+													titanic, which contains information about each individual passenger, including their ticket class
+													(which is another measure of socioeconomic status), sex, age, the number of siblings, spouses, children,
+													and parents they traveled with, assigned ticket number, passenger fare, cabin number, the port that they
+													embarked from, and whether they survived the shipwreck or not. Models chosen were prediction accuracy oriented
+													rather than an inferential.
+												</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton5" onclick="myFunction('myDIV5')">Risk of Stroke and Stroke Prevention</button>
+											<div id="myDIV5" style="display: none;">
+												<p>
+													Analysis on variables relating to experiencing stroke and determining whether there are actionable steps
+													one could take to reduce their risk of stroke. To evaluate the model's ability to predict stroke to that of 
+													other potential stroke-predictor algorithms. The data used had approximately 25k people, 
+													containing information potentially-relevant lifestyle variables. The data was split into a training set, 
+													which additionally contained the stroke outcome meant to build our model on, and a testing set meant
+													to test the accuracy of our model. These samples contained 15,303 and 10,204 observations respectively.
+												</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton6" onclick="myFunction('myDIV6')">Analysis of Proper PPE Usage in Cal Poly Pomona Library</button>
+											<div id="myDIV6" style="display: none;">
+												<p>
+													The analysis on the number PPE usage requirements. The data was collected randomly from the Cal Poly Pomona University Library.
+													The goal of this analysis is to ensure that at least 65% of students in the University Library are wearing a mask of
+													surgical grade or better at any given time. If the requirement is not met, the data will allow the university to
+													determine how to best proceed in changing policies to ensure student safety from COVID-19. 
+												</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton7" onclick="myFunction('myDIV7')">Clustering Students by Health Survey</button>
+											<div id="myDIV7" style="display: none;">
+												<p>
+													Cluster analysis on the Global School-Based Health Survey which was done in schools across Argentina in 2018. 
+													A total of 56,981 students participated and more than 19 variables were recorded for each of these students. 
+													Before utilizing the data, it was cleaned to only include 19 variables. The data set was put together through a self-administered 
+													questionnaire meant to obtain data on young people’s health behaviour and protective factors related to the leading causes of 
+													morbidity and mortality. The variables were analyzed by their correlation with one another and the number of clusters were determined 
+													with a scree plot.
+												</p>
+											</div>
+									</div>
+									
+									<!-- <div>
+										<button id="toggleButton8" onclick="myFunction('myDIV8')">Presentation of the Vitali Theorem, the Cantor Set, 
+											and the Cantor-Lebesque Function</button>
+											<div id="myDIV8" style="display: none;">
+												<p>
+													INSERT DESCRIPTION
+												</p>
+											</div>
+									</div> -->
+									<!-- <div>
+										<button id="toggleButton8" onclick="myFunction('myDIV8')">This Website!</button>
+											<div id="myDIV8" style="display: none;">
+												<p>
+													I coded this website using a free template from <a href="http://html5up.net">HTML5 UP</a>. Throughout this process
+													I had to edit the html, css, and javascript files to customize and add some features for users.
+												</p>
+											</div>
+									</div> -->
+
+								</div>
+
+								<div class="button-container">
+									<u><h2>UNDERGRADUATE</h2></u><br>
+									
+									<div>
+										<button id="toggleButton10" onclick="myFunction('myDIV10')">Nonparametric approaches to the Student&apos;s Sleep Data</button>
+											<div id="myDIV10" style="display: none;">
+												<p>
+													Analysis on an anonymized sleep study with the goal to determine 
+													whether the difference in drugs taken can cause a difference in 
+													sleep patterns for each patient in the study. After determining the data is not normally 
+													distributed, the Wald-Wolfowitz Runs Test and the Mann-Whitney-Wilcoxon Test were ran at a significance level of 5%,
+													and it was concluded that the difference in drugs taken do not cause a difference in sleep patterns for their patients. 
+												</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton11" onclick="myFunction('myDIV11')">Categorical Analysis of Chicken Weights by Feed Type</button>
+											<div id="myDIV11" style="display: none;">
+												<p>
+													Analysis on the difference of effects on weight for each feed type given to chicks. Tests used for analysis are
+													the Chi-Squared Test for homogeneity, the 𝐺2 Test, and the Fisher’s Exact Test. 
+												</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton12" onclick="myFunction('myDIV12')">Applied Regression Analysis Movies Data Set</button>
+											<div id="myDIV12" style="display: none;">
+												<p>
+													Prediction of how many likes a movie will receive. The Movies data set was used for this analysis and originated 
+													from the UCI Machine Learning Repository, which contains information on 231 Movies from the years 2014-2015 and 
+													variables such as Year, Ratings, Gross, Budget, Views, Likes, Dislikes, and Comments. The data was split into a 50:50 training and test 
+													set split. Model selection was carried out with forward selection, transformations, Ridge, and Lasso Regression. 												 
+												</p>
+											</div>
+									</div>
+
+									<div>
+										<button id="toggleButton9" onclick="myFunction('myDIV9')">Theremin Arduino Application</button>
+											<div id="myDIV9" style="display: none;">
+												<p>
+													The coding and creation of a theremin (an electronic musical instrument controlled without
+													physical contact by the performer). The code was made with Arduino IDE and included circuitry basics.
+												</p>
+											</div>
+									</div>
+									
+								</div>
+								<style>
+									.panel {
+										width: 100%; /* Set the panel to full width */
+										/* Add any other necessary styles for the panel */
+									}
+									.button-container {
+										display: flex;
+										flex-direction: column;
+									}
+								</style>
+										
+								<!-- <section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+										</div>
+									</div>
+								</section> -->
+							</article>
+							
+						<!-- Research -->
+							<article id="research" class="panel">
+								<header>
+									<h1>RESEARCH</h1>
+								</header>
+								<h2>Multi-State Markov Modeling for Student Pathways</h2>
+								<p>(Expected Completion: Summer 2024)</p>								
+								<p>The importance of diversity in science, technology, engineering, and mathematics (STEM) has increased in the recent decades. 
+									This has allowed for necessary collaboration, furthering the world's advancements in these fields. Diversity in STEM has been 
+									difficult to achieve due to the lack of diversity in higher education (which has been historically observed, even today). To get a better 
+									understanding of underrepresented student's successes, my research will track the pathways of students who are enrolled in 4-year universities. 
+									More specifically, students who are enrolled in 4-year universities as a Math major, STEM major (but not Math), and non-STEM major will be observed 
+									to investigate the retention and attrition of STEM majors at both a department level (in regards to Math students) and university level 
+									(in regards to STEM and Non-STEM students). Prior to this investigation, knowledge of the types of enrollment mobility are crucial to proper 
+									classification of the stages students may take along their academic journeys.
+								</p>	
+
+								<p>The dataset used to evaluate student pathways is the MIDFIELD dataset. This data set is a longitudinal data set made from a collection of 
+									universities who are in partnership with MIDFIELD, containing records of student demographic information, academic records such as grades, 
+									GPAs, and courses, and graduation records of degree attainment information for each student who had graduated from the institution that was 
+									participating in the study. Like all statistical analysis involving massive datasets such as the MIDFIELD dataset, data cleaning, feature 
+									engineering, and organization of the data was utilized to help with statistical analysis. A Multi-spell discrete-time approach is being utilized to 
+									incorporate time-varying predictors and censoring which is beneficial when using longitudinal data to analyze mobility behaviours. 
+									With the use of Multi-State Markov Models (MSM), we can easily describe how students move through a series of enrollment spells in the 
+									continuous time frame recorded during the study.
+								</p>									
+							</article>
+
+						<!-- Talks -->
+						<article id="talks" class="panel">
+							<header>
+								<h1>Talks</h1>
+							</header>
+							<h4>CPP & CSUF SIAM 8th Annual Mini-Conference (5/4/2024)</h4>
+							<p> 
+								(Multi-State Markov Modeling for Student Pathways)
+							</p>
+						</article>
+							
+						<!-- Contact -->
+						<article id="contact" class="panel">
+							<header>
+								<h1>CONTACT ME</h1>
+							</header>
+							<ul class="icons">
+								I am happy to connnect and chat about anything! You can reach me through <a href="mailto:amcastelazo@outlook.com">email</a>.
+						</article>
+							
+					</div>
+						
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Alexandra Castelazo 2024</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
