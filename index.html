@@ -52,7 +52,7 @@
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul> -->
 									</div>
-									<span class="image"><img src="images/grad.jpg" alt="" /></span>
+									<span class="image"><img src="images/BAFTER.png" alt="" /></span>
 								</div>
 							</section>
 
@@ -63,6 +63,7 @@
 								</header>
 								<p>
 									Below are some of the projects I worked on for various classes throughout my undergraduate and graduate career.
+									<br><i>Select a project to show more information.</i></br>
 								</p>
 								<div class="button-container">
 									<u><h2>GRADUATE</h2></u><br>
@@ -74,6 +75,20 @@
 													Analysis on trends, seasonality, and forecasting of police shootings with a dataset with information on daily shootings,
 													as well as the ethnicity of the people that had been shot from 2015-2020. The data included six ethnical categories: White, Black, Hispanic,
 													Asian, Native, and Other. 
+												</p>
+												<div class="row">
+													<div class="column">
+													  <img src="images/Black_Pred.jpg" style="width:100%">
+													  <img src="images/White_Pred.jpg" style="width:100%">
+													</div>
+													<div class="column">
+													  <img src="images/Hispanic_Pred.jpg" style="width:100%">
+													  <img src="images/Other_Pred.jpg" style="width:100%">
+													</div>
+												</div>
+												<p style="text-align: left;">
+													Above are predictions for the different ethnicity groups included in the data. An important note about the data is that the totals for each 
+													ethnicity group vary, so some of the predictions will be much smaller than others.
 												</p>
 											</div>
 									</div>
@@ -132,7 +147,12 @@
 													(which is another measure of socioeconomic status), sex, age, the number of siblings, spouses, children,
 													and parents they traveled with, assigned ticket number, passenger fare, cabin number, the port that they
 													embarked from, and whether they survived the shipwreck or not. Models chosen were prediction accuracy oriented
-													rather than an inferential.
+													rather than an inferential oriented. Variable data imputation was also necessary for some variables with missing information. 
+												</p>
+												<a href="#" class="image fit"><img src="images/Titanic_ROC.jpg" alt=""></a>
+												<p style="text-align: left;">
+													The above are ROC curves for each of the 10 folds with probability predictions for the support vector machine model. 
+													Out of all of the other models created, the support vector machine model had the best prediction accuracy with a lower deviation.
 												</p>
 											</div>
 									</div>
@@ -147,6 +167,13 @@
 													containing information potentially-relevant lifestyle variables. The data was split into a training set, 
 													which additionally contained the stroke outcome meant to build our model on, and a testing set meant
 													to test the accuracy of our model. These samples contained 15,303 and 10,204 observations respectively.
+												</p>
+												<a href="#" class="image fit"><img src="images/Stroke.jpg" alt=""></a>
+												<a href="#" class="image fit"><img src="images/Stroke2.jpg" alt=""></a>
+												<p>
+													Based on the table above, the most accurate model was the Ensemble model, which was based off Random Forest, Lasso GLM, K
+													Nearest Neighbors (KNN), and Gradient Boosting Machine (GBM) predictors. Although the model has a high accuracy, the model is 
+													not interpretable.
 												</p>
 											</div>
 									</div>
