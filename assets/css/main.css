@@ -3795,14 +3795,18 @@ input, select, textarea {
 	border: none;
 	color: #474545;
 	padding: 10px 20px;
-	text-align: left;
+	text-align: center; /* Center the text within the button */
 	text-decoration: none;
 	display: inline-block;
 	font-size: 1em;
-	margin: 4px 2px;
+	margin: 4px auto; /* Center the button horizontally */
 	cursor: pointer;
 	border-radius: 8px;
-  }
+	max-width: 100%; /* Limit the maximum width of the button */
+	white-space: normal; /* Allow text to wrap */
+	height: auto; /* Allow the button height to adjust based on content */
+	line-height: 1.5; /* Set line height to control the spacing between lines */
+	}
 
   /* Override hover color */
 [id^="toggleButton"]:hover {
