@@ -30,7 +30,7 @@
 							<li><a href="#intro" class="active">About Me</a></li>
 							<li><a href="#first">Projects</a></li>
 							<li><a href="#second">Research</a></li>
-							<li><a href="#cta">Talks</a></li>
+							<li><a href="#cta">Talks & Presentations</a></li>
 						</ul>
 					</nav>
 
@@ -106,7 +106,7 @@
 													overestimates the number of compromised credit cards to help minimize overall
 													costs.
 												</p>
-												<a href="#" class="image fit"><img src="images/cardfraud.jpg" alt=""></a>
+												<a class="image fit"><img src="images/cardfraud.jpg" alt=""></a>
 												<p style="text-align: left;">	The final chosen predictive model, out of a total of 15 models, was a Random Forest for the following model:
 													fraud ∼ number of declines + age + amount. This model had an AUC (for both training and test sets) of 0.8919.</p>
 											</div>
@@ -124,7 +124,7 @@
 													of the transaction, and the year the building was made.
 												</p>
 
-												<a href="#" class="image fit"><img src="images/taipei.jpg" alt=""></a>
+												<a class="image fit"><img src="images/taipei.jpg" alt=""></a>
 
 												<p style="text-align: left;">
 													The above plot shows the residuals vs fitted values. The red line is a scatterplot smoother and represents the average
@@ -149,7 +149,7 @@
 													embarked from, and whether they survived the shipwreck or not. Models chosen were prediction accuracy oriented
 													rather than an inferential oriented. Variable data imputation was also necessary for some variables with missing information. 
 												</p>
-												<a href="#" class="image fit"><img src="images/Titanic_ROC.jpg" alt=""></a>
+												<a class="image fit"><img src="images/Titanic_ROC.jpg" alt=""></a>
 												<p style="text-align: left;">
 													The above are ROC curves for each of the 10 folds with probability predictions for the support vector machine model. 
 													Out of all of the other models created, the support vector machine model had the best prediction accuracy with a lower deviation.
@@ -168,8 +168,8 @@
 													which additionally contained the stroke outcome meant to build our model on, and a testing set meant
 													to test the accuracy of our model. These samples contained 15,303 and 10,204 observations respectively.
 												</p>
-												<a href="#" class="image fit"><img src="images/Stroke.jpg" alt=""></a>
-												<a href="#" class="image fit"><img src="images/Stroke2.jpg" alt=""></a>
+												<a class="image fit"><img src="images/Stroke.jpg" alt=""></a>
+												<a class="image fit"><img src="images/Stroke2.jpg" alt=""></a>
 												<p>
 													Based on the table above, the most accurate model was the Ensemble model, which was based off Random Forest, Lasso GLM, K
 													Nearest Neighbors (KNN), and Gradient Boosting Machine (GBM) predictors. Although the model has a high accuracy, the model is 
@@ -202,7 +202,7 @@
 													with a scree plot.
 												</p>
 
-												<a href="#" class="image fit"><img src="images/bully.png" alt=""></a>
+												<a class="image fit"><img src="images/bully.png" alt=""></a>
 
 												<p style="text-align: left;">
 													The above image is a correlation heatmap where the largest correlation between each of the
@@ -294,7 +294,7 @@
 								</style>
 							</section>
 
-						<!-- Second Section -->
+						<!-- Second Section
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>RESEARCH</h2>
@@ -321,12 +321,63 @@
 									patterns based on the observed data from MIDFIELD.
 
 								</p>		
+							</section> -->
+
+<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>RESEARCH</h2>
+								</header>
+								<h2 style="text-align: center;">Multi-State Markov Modeling for Student Pathways</h2>
+										<p style="text-align: center;">(Expected Completion: May 2025)</p>	
+								<div class="row">
+									<div class="column">
+																	
+										<p style="text-align: left;">Diversity in STEM has been difficult to achieve due to the lack of diversity in higher education (Lord, Layton, & Ohland, 2011). 
+											A major contributor to the lack of diversity in STEM is the unevenness of student mobility for underserved students in STEM 
+											(Guillermo-Wann, Hurtado, & Lua Alvarez, 2013). To get a better understanding of this diversity problem, my research tracks the 
+											pathways of students who are enrolled in 4-year universities with the use of multi-state Markov modeling. Prior to this investigation, 
+											knowledge of the types of enrollment mobility patterns was crucial to properly classify the states of the Markov model through a 
+											continuous timeframe. To approach student mobility with multi-state Markov modeling, states such as Math, STEM (Non-Math), and 
+											Non-STEM, Graduated, and Leave were created. These states help with the investigation of the retention 
+											and attrition of STEM majors at both a department level and university level. Furthermore, variables chosen for this 
+											modeling method were selected to consider underserved students to detect whether a relationship between an underserved 
+											demographic and student mobility pathways exist.
+										</p>	
+		
+										<!-- <p style="text-align: left;">The dataset used to evaluate student mobility pathways is the MIDFIELD dataset. This data set comes from a longitudinal study 
+											from a collection of universities that are in partnership with MIDFIELD, where each university entered the study at different 
+											times ranging from 1988 to 2018. MIDFIELD contains records of student demographic information, academic records such as grades, 
+											GPA, and courses, and records of degree attainment information for each student who had graduated from institutions that participated 
+											in the study. With the use of multi-state Markov modeling (MSM), we can describe how students move through a series of states 
+											during their enrollment period and find the probability of them taking part in different student mobility patterns based on the 
+											observed data from MIDFIELD.
+		
+										</p>		 -->
+									</div>
+
+									<div class="column" style="flex: 0 0 40%;">
+										<a class="image fit"><img src="images/Student Pathway Multi-State Markov Model State Diagram.png" alt=""></a>
+										<!-- <a class="image fit"><img src="images/Model Comparison.png" alt=""></a> -->
+									</div>
+								</div>
+								<div class="row">
+									<p style="text-align: left;">The dataset used to evaluate student mobility pathways is the MIDFIELD dataset. This data set comes from a longitudinal study 
+										from a collection of universities that are in partnership with MIDFIELD, where each university entered the study at different 
+										times ranging from 1988 to 2018. MIDFIELD contains records of student demographic information, academic records such as grades, 
+										GPA, and courses, and records of degree attainment information for each student who had graduated from institutions that participated 
+										in the study. With the use of multi-state Markov modeling (MSM), we can describe how students move through a series of states 
+										during their enrollment period and find the probability of them taking part in different student mobility patterns based on the 
+										observed data from MIDFIELD.
+	
+									</p>	
+								</div>
 							</section>
 
 						<!-- Get Started -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>TALKS</h2>
+									<h2>TALKS & PRESENTATIONS</h2>
 								</header>
 								<h3>CPP & CSUF SIAM 8th Annual Mini-Conference - California Polytechnic State University, Pomona (5/4/2024)</h3>
 								<p> 
@@ -343,6 +394,16 @@
 								<h3>13th Annual RSCA Conference - California Polytechnic State University, Pomona (3/1/2025)</h3>
 								<p> 
 									(Sophisms and Erroneous Resolutions in Analysis | Discussions in a Collaborative Classroom)
+								</p>
+
+								<h3>Mathematical Pathways to an Excellent Future - University of California, Riverside (3/11/2025)</h3>
+								<p> 
+									(Mobility of Underserved Students in STEM)
+								</p>
+								<h2>UPCOMING</h2>
+								<h3>MAA SoCal-Nev Spring 2025 Section Meeting - Pepperdine University (3/29/2025)</h3>
+								<p> 
+									(Mobility of Underserved Students in STEM)
 								</p>
 
 							</section>
